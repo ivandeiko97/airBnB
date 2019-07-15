@@ -1,0 +1,392 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir-Heavy.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  color: #3d4e61; }
+
+a {
+  color: #3d4e61;
+  text-decoration: none; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 25px; }
+  .header-nav-account {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header .logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30px;
+            flex: 0 1 30px; }
+  .header-nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 345px;
+            flex: 0 1 345px; }
+    .header-nav .nav-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 0;
+      padding: 0; }
+      .header-nav .nav-menu__item {
+        list-style-type: none;
+        margin-right: 38px; }
+        .header-nav .nav-menu__item .nav-menu__link {
+          font-weight: bold;
+          -webkit-transition: 0.2s;
+          transition: 0.2s; }
+          .header-nav .nav-menu__item .nav-menu__link:hover {
+            color: #fd5c63; }
+  .header .person-account {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30px;
+            flex: 0 1 30px; }
+
+.apartment-photos {
+  width: 100%;
+  background: url(../images/Image.png) no-repeat center center;
+  background-size: cover;
+  min-height: 464px;
+  margin-bottom: 40px; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 75px; }
+  .main .container {
+    width: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .main .container .about-apartment {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 491px;
+              flex: 0 1 491px;
+      color: #3d4e61; }
+      .main .container .about-apartment__hostName {
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        line-height: 33px;
+        font-weight: bold;
+        margin-bottom: 11px; }
+      .main .container .about-apartment__place {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 12px; }
+      .main .container .about-apartment__text {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0; }
+      .main .container .about-apartment__btn {
+        width: 150px;
+        height: 50px;
+        margin: 25px 0 3px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #118488;
+        background-color: #fff;
+        border: 1px solid #118488;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer; }
+        .main .container .about-apartment__btn:hover {
+          color: #fff;
+          background-color: #118488; }
+    .main .container .apartment {
+      margin-bottom: 44.05px;
+      width: 450px; }
+      .main .container .apartment__title {
+        font-size: 36px;
+        line-height: 42px;
+        color: #3d4e61;
+        margin-bottom: 10.16px;
+        font-family: "Roboto", sans-serif; }
+      .main .container .apartment .entire-apartament__link {
+        display: block;
+        font-size: 16px;
+        line-height: 19px;
+        color: #687c94;
+        margin-bottom: 15px; }
+      .main .container .apartment .apartment-specification {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 28.05px; }
+        .main .container .apartment .apartment-specification__link {
+          font-size: 16px;
+          line-height: 19px;
+          color: #3d4e61;
+          margin-right: 32px; }
+          .main .container .apartment .apartment-specification__link:hover {
+            -webkit-box-shadow: 0 1px 0 #fd5c63;
+                    box-shadow: 0 1px 0 #fd5c63; }
+      .main .container .apartment__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: #3d4e61;
+        margin-bottom: 24px; }
+      .main .container .apartment__contact {
+        font-size: 16px;
+        line-height: 19px;
+        color: #3d4e61;
+        font-weight: bold;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
+        .main .container .apartment__contact:hover {
+          color: #fd5c63;
+          -webkit-box-shadow: 0 1px 0 #fd5c63;
+                  box-shadow: 0 1px 0 #fd5c63; }
+    .main .container .amenities {
+      margin-bottom: 66.05px; }
+      .main .container .amenities__title {
+        font-size: 20px;
+        line-height: 23px;
+        color: #3d4e61;
+        margin-bottom: 25px;
+        font-weight: bold; }
+      .main .container .amenities .amenities-item {
+        width: 400px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .main .container .amenities .amenities-item__link {
+          font-size: 16px;
+          line-height: 19px;
+          color: #3d4e61;
+          margin-bottom: 17px;
+          -webkit-box-flex: 0;
+              -ms-flex: 0 0 175px;
+                  flex: 0 0 175px;
+          -webkit-transition: 0.2s;
+          transition: 0.2s; }
+          .main .container .amenities .amenities-item__link:hover {
+            color: #fd5c63; }
+      .main .container .amenities .all-amenities__link {
+        font-size: 16px;
+        line-height: 19px;
+        color: #3d4e61;
+        font-weight: bold;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
+        .main .container .amenities .all-amenities__link:hover {
+          -webkit-box-shadow: 0 1px 0 #fd5c63;
+                  box-shadow: 0 1px 0 #fd5c63;
+          color: #fd5c63; }
+    .main .container .reviews {
+      margin-bottom: 50px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 500px;
+              flex: 1 1 500px; }
+      .main .container .reviews__title {
+        font-size: 28px;
+        line-height: 33px;
+        color: #3d4e61;
+        font-weight: bold;
+        margin-bottom: 38px; }
+      .main .container .reviews__persons {
+        margin-bottom: 20px; }
+        .main .container .reviews__persons .reviews-person {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin-bottom: 23px; }
+          .main .container .reviews__persons .reviews-person__photo {
+            margin-right: 21px;
+            height: 50px; }
+          .main .container .reviews__persons .reviews-person__info {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            height: 50px; }
+            .main .container .reviews__persons .reviews-person__info__name {
+              color: #3d4e61;
+              font-weight: bold;
+              font-size: 18px; }
+            .main .container .reviews__persons .reviews-person__info__data {
+              color: #3d4e61;
+              font-size: 18px; }
+      .main .container .reviews__text {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 300px;
+                flex: 0 0 300px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3d4e61; }
+
+.booking-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  height: 330px;
+  width: 330px; }
+  .booking-form__wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 270px;
+            flex: 0 0 270px; }
+  .booking-form .form {
+    margin-top: 40px; }
+    .booking-form .form__item {
+      width: 270px;
+      height: 50px;
+      padding: 14px 17px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-family: "Avenir", sans-serif;
+      border: 1px solid #e1e7ed;
+      border-radius: 3px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      outline: none; }
+    .booking-form .form__item[type="submit"] {
+      margin-top: 8px;
+      background: #fd5c63;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+      .booking-form .form__item[type="submit"]:hover {
+        background: #fd7a80; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 213px;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed; }
+  .footer-wrapper {
+    width: 900px; }
+  .footer__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .footer__li_bold {
+    font-weight: bold; }
+  .footer__li {
+    list-style-type: none;
+    margin-top: 9px; }
+    .footer__li:last-child {
+      margin-right: 0; }
+    .footer__li a {
+      text-decoration: none;
+      color: #3d4e61; }
+  .footer__ul {
+    padding: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px; }
+
+@media (max-width: 960px) {
+  .main {
+    padding: 0 16px; }
+    .main .container {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .main .container .about-apartment {
+        margin-bottom: 30px; }
+      .main .container .booking-form {
+        margin-bottom: 30px; }
+  .footer {
+    padding: 0 16px; }
+    .footer__navigation {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+
+@media (max-width: 576px) {
+  .about-apartment {
+    -webkit-box-flex: 491px;
+        -ms-flex: 491px;
+            flex: 491px; } }
+
+/*# sourceMappingURL=main.css.map */
