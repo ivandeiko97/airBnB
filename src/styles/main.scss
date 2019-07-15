@@ -1,0 +1,390 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  color: $mainColor;
+}
+
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  &-nav-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    flex: 0 1 30px;
+  }
+  &-nav {
+    flex: 0 1 345px;
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      &__item {
+        list-style-type: none;
+        margin-right: 38px;
+        .nav-menu__link {
+          font-weight: bold;
+          transition: 0.2s;
+          &:hover {
+            color: $hoverColor;
+          }
+        }
+      }
+    }
+  }
+  .person-account {
+    flex: 0 1 30px;
+  }
+}
+
+.apartment-photos {
+  width: 100%;
+  background: url(../images/Image.png) no-repeat center center;
+  background-size: cover;
+  min-height: 464px;
+  margin-bottom: 40px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 75px;
+
+  .container {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .about-apartment {
+      flex: 0 1 491px;
+      color: $mainColor;
+
+      &__hostName {
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        line-height: 33px;
+        font-weight: bold;
+        margin-bottom: 11px;
+      }
+
+      &__place {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 12px;
+      }
+
+      &__text {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0;
+      }
+
+      &__btn {
+        width: 150px;
+        height: 50px;
+        margin: 25px 0 3px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #118488;
+        background-color: #fff;
+        border: 1px solid #118488;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background-color: #118488;
+        }
+      }
+    }
+
+    .apartment {
+      margin-bottom: 44.05px;
+      width: 450px;
+
+      &__title {
+        font-size: 36px;
+        line-height: 42px;
+        color: $mainColor;
+        margin-bottom: 10.16px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .entire-apartament__link {
+        display: block;
+        font-size: 16px;
+        line-height: 19px;
+        color: #687c94;
+        margin-bottom: 15px;
+      }
+
+      .apartment-specification {
+        display: flex;
+        margin-bottom: 28.05px;
+
+        &__link {
+          font-size: 16px;
+          line-height: 19px;
+          color: $mainColor;
+          margin-right: 32px;
+
+          &:hover {
+            box-shadow: 0 1px 0 $hoverColor;
+          }
+        }
+      }
+
+      &__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: $mainColor;
+        margin-bottom: 24px;
+      }
+
+      &__contact {
+        font-size: 16px;
+        line-height: 19px;
+        color: $mainColor;
+        font-weight: bold;
+        transition: 0.2s;
+
+        &:hover {
+          color: $hoverColor;
+          box-shadow: 0 1px 0 $hoverColor;
+        }
+      }
+    }
+
+    .amenities {
+      margin-bottom: 66.05px;
+
+      &__title {
+        font-size: 20px;
+        line-height: 23px;
+        color: $mainColor;
+        margin-bottom: 25px;
+        font-weight: bold;
+      }
+
+      .amenities-item {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__link {
+          font-size: 16px;
+          line-height: 19px;
+          color: $mainColor;
+          margin-bottom: 17px;
+          flex: 0 0 175px;
+          transition: 0.2s;
+
+          &:hover {
+            color: $hoverColor;
+          }
+        }
+      }
+
+      .all-amenities__link {
+        font-size: 16px;
+        line-height: 19px;
+        color: $mainColor;
+        font-weight: bold;
+        transition: 0.2s;
+
+        &:hover {
+          box-shadow: 0 1px 0 $hoverColor;
+          color: $hoverColor;
+        }
+      }
+    }
+
+    .reviews {
+      margin-bottom: 50px;
+      flex: 1 1 500px;
+
+      &__title {
+        font-size: 28px;
+        line-height: 33px;
+        color: $mainColor;
+        font-weight: bold;
+        margin-bottom: 38px;
+      }
+
+      &__persons {
+        margin-bottom: 20px;
+
+        .reviews-person {
+          display: flex;
+          align-items: center;
+          margin-bottom: 23px;
+
+          &__photo {
+            margin-right: 21px;
+            height: 50px;
+          }
+
+          &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 50px;
+
+            &__name {
+              color: $mainColor;
+              font-weight: bold;
+              font-size: 18px;
+            }
+
+            &__data {
+              color: $mainColor;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      &__text {
+        flex: 0 0 300px;
+        font-size: 16px;
+        line-height: 19px;
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+.booking-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  height: 330px;
+  width: 330px;
+
+  &__wrapper {
+    flex: 0 0 270px;
+  }
+
+  .form {
+    margin-top: 40px;
+
+    &__item {
+      width: 270px;
+      height: 50px;
+      padding: 14px 17px;
+      box-sizing: border-box;
+      font-family: "Avenir", sans-serif;
+      border: 1px solid #e1e7ed;
+      border-radius: 3px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    &__item[type="submit"] {
+      margin-top: 8px;
+      background: #fd5c63;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background: lighten(#fd5c63, 6%);
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 213px;
+  font-size: 16px;
+  line-height: 19px;
+  box-shadow: 0 -1px 0 #e1e7ed;
+
+  &-wrapper {
+    width: 900px;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__li_bold {
+    font-weight: bold;
+  }
+
+  &__li {
+    list-style-type: none;
+    margin-top: 9px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $mainColor;
+    }
+  }
+
+  &__ul {
+    padding: 0;
+    flex: 1 1 300px;
+  }
+}
+
+@media (max-width: 960px) {
+  .main {
+    padding: 0 16px;
+    .container {
+      justify-content: center;
+      .about-apartment {
+        margin-bottom: 30px;
+      }
+      .booking-form {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .footer {
+    padding: 0 16px;
+
+    &__navigation {
+      justify-content: space-between;
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  .about-apartment {
+    flex: 491px;
+  }
+}
